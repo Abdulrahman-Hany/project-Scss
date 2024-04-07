@@ -1,0 +1,52 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body{
+    height: 100%;
+  }
+  ul, ol{
+    list-style-type: none;
+  }
+  a{
+    text-decoration: none;
+    color: unset;
+    transition: $default-transition;
+  
+    &, &:link, &:visited{
+      color: $magnolia-light;
+    }
+  
+    &:hover, &:focus, &:active{
+      color: darken($magnolia-light, 20%);
+    }
+  }
+  
+  img, picture, video, canvas, svg{
+    max-width: 100%;
+    display: block;
+  }
+  img{
+    width: 100%;
+  }
+  input, button, textarea, select{
+    font:inherit;
+    outline: 0
+  }
+  
+  h1, h2, h3, h4, h5, h6, p{
+    overflow-wrap: break-word;
+  }
+  
+  textarea{
+    resize: none;
+  }
+  button{
+    background-color: transparent;
+    border: none;
+  }
+  img, object, embed, video{
+    max-width: 100%;
+  }
